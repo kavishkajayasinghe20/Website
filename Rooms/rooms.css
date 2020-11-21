@@ -6,6 +6,7 @@ html, body {
 }
 body {
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
 /*============== TOP BAR ===============*/
@@ -36,6 +37,7 @@ a:hover, a:visited, a:link, a:active {
 .navbar {
     padding: .8rem;
     font-weight: 600;
+    letter-spacing: .03rem;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, .1);
@@ -50,6 +52,18 @@ a:hover, a:visited, a:link, a:active {
 .nav-link.active,
 .nav-link:hover {
     color: #009ECC!important;
+}
+
+/*============ INNER HERO =============*/
+.carousel-caption {
+    position: absolute;
+    top: 38%;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.carousel-caption h1 {
+    text-shadow: .1rem .1rem .2rem rgba(0, 0, 0, 1); 
 }
 
 /*====================================================================================================================================*/
@@ -97,5 +111,7 @@ ul.social li {
 }
 /* Devices under 768px (md) */
 @media (max-width: 767.98px) {
-
+    .carousel-caption h1 {
+        font-size: 1.5rem;
+    }   
 }
